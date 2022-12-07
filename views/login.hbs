@@ -1,0 +1,37 @@
+<div class="mt-5 flex justify-center">
+  <div class="w-1/4">
+    <h1 class="text-3xl mb-5 text-white">Log In</h1>
+    <form
+      class="w-full flex flex-col gap-3"
+      action="/login"
+      method="post"
+      role="form"
+      autocomplete="off"
+    >
+      <input
+        id="nombre"
+        name="username"
+        placeholder="name"
+        class="input input-bordered w-full"
+        type="text"
+        required
+      />
+      <input
+        id="password"
+        name="password"
+        placeholder="password"
+        class="input input-bordered w-full"
+        type="password"
+        required
+      />
+      <input class="btn btn-secondary" type="submit" value="Login" />
+    </form>
+    <div class="w-full">
+      <input
+        class="btn btn-primary w-full"
+        onclick="location.href = '/signup'"
+        value="Sign Up"
+      />
+    </div>
+  </div>
+</div>
